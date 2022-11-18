@@ -1,0 +1,2094 @@
+{
+	"B2crane1": {
+		"armourHeat": 4,
+		"armourKinetic": 10,
+		"buildPoints": 50,
+		"buildPower": 25,
+		"class": "Droids",
+		"hitpoints": 280,
+		"id": "B2crane1",
+		"model": "cranebody1.pie",
+		"name": "*crane1*",
+		"powerOutput": 2800,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 1600
+	},
+	"B2crane2": {
+		"armourHeat": 4,
+		"armourKinetic": 10,
+		"buildPoints": 50,
+		"buildPower": 25,
+		"class": "Droids",
+		"hitpoints": 320,
+		"id": "B2crane2",
+		"model": "cranebody2.pie",
+		"name": "*crane2*",
+		"powerOutput": 2800,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 1600
+	},
+	"B2tractor": {
+		"armourHeat": 2,
+		"armourKinetic": 7,
+		"buildPoints": 30,
+		"buildPower": 10,
+		"class": "Droids",
+		"hitpoints": 300,
+		"id": "B2tractor",
+		"model": "tractor.pie",
+		"name": "*tractor*",
+		"powerOutput": 1900,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"ScavCamperBody": {
+		"armourHeat": 3,
+		"armourKinetic": 6,
+		"buildPoints": 35,
+		"buildPower": 15,
+		"class": "Droids",
+		"hitpoints": 350,
+		"id": "ScavCamperBody",
+		"model": "camper.pie",
+		"name": "*scavenger camper*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"V-Tol": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"ScavBiplanes": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"Helicopter": {
+				"left": "scavhelicopter.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "chblades.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"ScavIcevanBody": {
+		"armourHeat": 3,
+		"armourKinetic": 6,
+		"buildPoints": 50,
+		"buildPower": 15,
+		"class": "Droids",
+		"hitpoints": 300,
+		"id": "ScavIcevanBody",
+		"model": "icevan.pie",
+		"name": "*scavenger ice van*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"V-Tol": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"ScavBiplanes": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"ScavTruckBody": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 65,
+		"buildPower": 20,
+		"class": "Droids",
+		"hitpoints": 400,
+		"id": "ScavTruckBody",
+		"model": "scavtruck.pie",
+		"name": "*scavenger truck*",
+		"powerOutput": 8000,
+		"size": "LIGHT",
+		"weaponSlots": 3,
+		"weight": 2000
+	},
+	"ScavNEXUSbody": {
+		"armourHeat": 8,
+		"armourKinetic": 10,
+		"buildPoints": 300,
+		"buildPower": 50,
+		"class": "Droids",
+		"hitpoints": 400,
+		"id": "ScavNEXUSbody",
+		"model": "scavnexus.pie",
+		"name": "*scavenger nexus tank*",
+		"powerOutput": 5000,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 2000
+	},
+	"ScavNEXUStrack": {
+		"armourHeat": 12,
+		"armourKinetic": 14,
+		"buildPoints": 100,
+		"buildPower": 29,
+		"class": "Droids",
+		"hitpoints": 450,
+		"id": "ScavNEXUStrack",
+		"model": "nextrack.pie",
+		"name": "*scavenger nexus track*",
+		"powerOutput": 15000,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 1500
+	},
+	"ScavengerChopper": {
+		"armourHeat": 4,
+		"armourKinetic": 7,
+		"buildPoints": 100,
+		"buildPower": 40,
+		"class": "Droids",
+		"hitpoints": 250,
+		"id": "ScavengerChopper",
+		"model": "scavchop.pie",
+		"name": "*scavenger chopper*",
+		"powerOutput": 2000,
+		"propulsionExtraModels": {
+			"Helicopter": {
+				"moving": "chblades.pie",
+				"still": "mediumheli_rotor_stationary.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 800
+	},
+	"HeavyChopper": {
+		"armourHeat": 6,
+		"armourKinetic": 11,
+		"buildPoints": 110,
+		"buildPower": 50,
+		"class": "Droids",
+		"hitpoints": 400,
+		"id": "HeavyChopper",
+		"model": "hvychop.pie",
+		"name": "*heavy chopper*",
+		"powerOutput": 2100,
+		"propulsionExtraModels": {
+			"Helicopter": {
+				"moving": "hvyblades.pie",
+				"still": "hvyblades-still.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 1500
+	},
+	"HeavyChopper-Hardcore": {
+		"armourHeat": 4,
+		"armourKinetic": 7,
+		"buildPoints": 100,
+		"buildPower": 160,
+		"class": "Droids",
+		"hitpoints": 1000,
+		"id": "HeavyChopper-Hardcore",
+		"model": "scav-transporter.pie",
+		"name": "*scavenger chopper*",
+		"powerOutput": 2000,
+		"size": "LIGHT",
+		"weaponSlots": 2,
+		"weight": 800
+	},
+	"B1BaBaPerson01": {
+		"armourHeat": 1,
+		"armourKinetic": 1,
+		"buildPoints": 20,
+		"buildPower": 1,
+		"class": "Babas",
+		"droidType": "PERSON",
+		"hitpoints": 40,
+		"id": "B1BaBaPerson01",
+		"model": "exbloke.pie",
+		"name": "*BaBa Body*",
+		"powerOutput": 125,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 100
+	},
+	"B1BaBaPerson01-Ultimate": {
+		"armourHeat": 2,
+		"armourKinetic": 3,
+		"buildPoints": 10,
+		"buildPower": 2,
+		"class": "Babas",
+		"droidType": "PERSON",
+		"hitpoints": 100,
+		"id": "B1BaBaPerson01-Ultimate",
+		"model": "exbloke.pie",
+		"name": "*Ultimate BaBa Body*",
+		"powerOutput": 125,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 100
+	},
+	"B2JeepBody": {
+		"armourHeat": 1,
+		"armourKinetic": 4,
+		"buildPoints": 75,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "B2JeepBody",
+		"model": "exjeep.pie",
+		"name": "*Baba Jeep Body*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"B2JeepBody-Ultimate": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 24,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "B2JeepBody-Ultimate",
+		"model": "exjeep.pie",
+		"name": "*Ultimate Baba Jeep Body*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"V-Tol": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"ScavBiplanes": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"Helicopter": {
+				"left": "scavhelicopter.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "chblades.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"B2RKJeepBody": {
+		"armourHeat": 1,
+		"armourKinetic": 4,
+		"buildPoints": 75,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "B2RKJeepBody",
+		"model": "exjeeprk.pie",
+		"name": "*Baba Jeep Body*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"B2RKJeepBody-Ultimate": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 28,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "B2RKJeepBody-Ultimate",
+		"model": "exjeeprk.pie",
+		"name": "*Ultimate Baba Jeep Body*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"B3body-sml-buggy01": {
+		"armourHeat": 1,
+		"armourKinetic": 3,
+		"buildPoints": 80,
+		"buildPower": 3,
+		"class": "Babas",
+		"hitpoints": 210,
+		"id": "B3body-sml-buggy01",
+		"model": "exbuggy.pie",
+		"name": "*Buggy Body*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"B3body-sml-buggy01-Ultimate": {
+		"armourHeat": 2,
+		"armourKinetic": 4,
+		"buildPoints": 20,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 210,
+		"id": "B3body-sml-buggy01-Ultimate",
+		"model": "exbuggy.pie",
+		"name": "*Ultimate Buggy Body*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			},
+			"V-Tol": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"ScavBiplanes": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"Helicopter": {
+				"left": "scavhelicopter.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "chblades.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"B3bodyRKbuggy01": {
+		"armourHeat": 1,
+		"armourKinetic": 3,
+		"buildPoints": 80,
+		"buildPower": 3,
+		"class": "Babas",
+		"hitpoints": 210,
+		"id": "B3bodyRKbuggy01",
+		"model": "exbugrk.pie",
+		"name": "*Rocket Buggy Body*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"B3bodyRKbuggy01-Ultimate": {
+		"armourHeat": 2,
+		"armourKinetic": 4,
+		"buildPoints": 28,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 210,
+		"id": "B3bodyRKbuggy01",
+		"model": "exbugrk.pie",
+		"name": "*Ultimate Rocket Buggy Body*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"B4body-sml-trike01": {
+		"armourHeat": 1,
+		"armourKinetic": 1,
+		"buildPoints": 65,
+		"buildPower": 2,
+		"class": "Babas",
+		"hitpoints": 180,
+		"id": "B4body-sml-trike01",
+		"model": "extrike.pie",
+		"name": "*Trike Body*",
+		"powerOutput": 2100,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 675
+	},
+	"B4body-sml-trike01-Ultimate": {
+		"armourHeat": 1,
+		"armourKinetic": 3,
+		"buildPoints": 15,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 180,
+		"id": "B4body-sml-trike01-Ultimate",
+		"model": "extrike.pie",
+		"name": "*Ultimate Trike Body*",
+		"powerOutput": 2100,
+		"propulsionExtraModels": {
+			"Helicopter": {
+				"left": "scavhelicopter.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "chblades.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 675
+	},
+	"Gigahorse-Hardcore": {
+		"armourHeat": 2,
+		"armourKinetic": 4,
+		"buildPoints": 20,
+		"buildPower": 15,
+		"class": "Babas",
+		"hitpoints": 900,
+		"id": "Gigahorse-Hardcore",
+		"model": "gigahorse.pie",
+		"name": "*Gigahorse*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 1000
+	},
+	"ClasicCar-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 12,
+		"buildPower": 5,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "ClasicCar-Hardcore",
+		"model": "clasiccar.pie",
+		"name": "*Classic Car*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"Scavturbo": {
+				"left": "scavturbo.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"V-Tol": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"ScavBiplanes": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"Helicopter": {
+				"left": "scavhelicopter.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "chblades.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"ClasicCoupe-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 12,
+		"buildPower": 5,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "ClasicCoupe-Hardcore",
+		"model": "clasiccarc.pie",
+		"name": "*Classic Coupe*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"Scavturbo": {
+				"left": "scavturbo.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"Bluesedan-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 4,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "Bluesedan-Hardcore",
+		"model": "bluesedan.pie",
+		"name": "*Blue Sedan*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"Scavturbo": {
+				"left": "scavturbo.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"RedPickup-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 4,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "RedPickup-Hardcore",
+		"model": "redpickup.pie",
+		"name": "*Red Pickup*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"Scavturbo": {
+				"left": "scavturbo.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"WhiteWagon-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 4,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "WhiteWagon-Hardcore",
+		"model": "whitewagon.pie",
+		"name": "*White Wagon*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"Scavturbo": {
+				"left": "scavturbo.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"BlueSUV-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 4,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 280,
+		"id": "BlueSUV-Hardcore",
+		"model": "bluesuv.pie",
+		"name": "*Blue SUV*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"Scavturbo": {
+				"left": "scavturbo.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 950
+	},
+	"Buzzard-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 12,
+		"buildPower": 5,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "Buzzard-Hardcore",
+		"model": "buzzard.pie",
+		"name": "*Buzzard*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"WarRig-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 65,
+		"buildPower": 15,
+		"class": "Droids",
+		"hitpoints": 1200,
+		"id": "WarRig-Hardcore",
+		"model": "warrig.pie",
+		"name": "*scavenger warrig*",
+		"powerOutput": 8000,
+		"size": "LIGHT",
+		"weaponSlots": 2,
+		"weight": 2000
+	},
+	"Truck-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 50,
+		"buildPower": 25,
+		"class": "Droids",
+		"hitpoints": 1200,
+		"id": "Truck-Hardcore",
+		"model": "scav-truck.pie",
+		"name": "*scavenger truck*",
+		"powerOutput": 8000,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrackhevy.pie"
+			},
+			"tracked01": {
+				"left": "scavtrackshevy.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrackhevy.pie"
+			},
+			"trackedscav": {
+				"left": "scavtrackshevy.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 2000
+	},
+	"Tanker-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 100,
+		"buildPower": 25,
+		"class": "Droids",
+		"hitpoints": 2500,
+		"id": "Tanker-Hardcore",
+		"model": "scav-tanker.pie",
+		"name": "*scavenger truck*",
+		"powerOutput": 8000,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 4000
+	},
+	"Doofwagon-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 100,
+		"buildPower": 30,
+		"class": "Droids",
+		"hitpoints": 3800,
+		"id": "Doofwagon-Hardcore",
+		"model": "doofwagon.pie",
+		"name": "*doofwagon*",
+		"powerOutput": 8000,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 5000
+	},
+	"Peacemaker-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 12,
+		"buildPower": 8,
+		"class": "Babas",
+		"hitpoints": 450,
+		"id": "Peacemaker-Hardcore",
+		"model": "peacemaker.pie",
+		"name": "*Classic Car*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"Buggy-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 10,
+		"buildPower": 5,
+		"class": "Babas",
+		"hitpoints": 250,
+		"id": "Buggy-Hardcore",
+		"model": "scav-buggy.pie",
+		"name": "*Buggy with Cargo*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 950
+	},
+	"Camper-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 6,
+		"buildPoints": 35,
+		"buildPower": 10,
+		"class": "Droids",
+		"hitpoints": 350,
+		"id": "Camper-Hardcore",
+		"model": "scav-camper.pie",
+		"name": "*scavenger camper*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"V-Tol": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			},
+			"ScavBiplanes": {
+				"left": "scavbiplane.pie",
+				"right": "scavbiplane.pie",
+				"moving": "scavbiplane.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 1000
+	},
+	"Bike-Hardcore": {
+		"armourHeat": 2,
+		"armourKinetic": 2,
+		"buildPoints": 30,
+		"buildPower": 2,
+		"class": "Droids",
+		"hitpoints": 260,
+		"id": "B2tractor",
+		"model": "motorbike.pie",
+		"name": "*Motorbike*",
+		"powerOutput": 1900,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 200
+	},
+	"Minitruck-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 10,
+		"buildPower": 8,
+		"class": "Babas",
+		"hitpoints": 300,
+		"id": "Minitruck-Hardcore",
+		"model": "scav-pick-up.pie",
+		"name": "*Mini Truck*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"Humvee-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 12,
+		"buildPower": 6,
+		"class": "Babas",
+		"hitpoints": 300,
+		"id": "Humvee-Hardcore",
+		"model": "scav-rocket-jeep.pie",
+		"name": "*Humvee*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"Humvee2-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 12,
+		"buildPower": 6,
+		"class": "Babas",
+		"hitpoints": 300,
+		"id": "Humvee2-Hardcore",
+		"model": "scav-jeep.pie",
+		"name": "*Humvee*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"ScorpionTank-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 6,
+		"buildPoints": 35,
+		"buildPower": 14,
+		"class": "Droids",
+		"hitpoints": 800,
+		"id": "ScorpionTank-Hardcore",
+		"model": "scorpiontank.pie",
+		"name": "*Scorpion Tank*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 2,
+		"weight": 200
+	},
+	"Peopleeater-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 50,
+		"buildPower": 25,
+		"class": "Droids",
+		"hitpoints": 1200,
+		"id": "Peopleeater-Hardcore",
+		"model": "peopleeater.pie",
+		"name": "*Peopleeater limosine*",
+		"powerOutput": 8000,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 2000
+	},
+	"Peopleeater2-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 50,
+		"buildPower": 25,
+		"class": "Droids",
+		"hitpoints": 3000,
+		"id": "Peopleeater2-Hardcore",
+		"model": "peopleeatertruck.pie",
+		"name": "*Peopleeater limosine*",
+		"powerOutput": 8000,
+		"size": "LIGHT",
+		"weaponSlots": 3,
+		"weight": 3000
+	},
+	"Copcar-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 12,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 260,
+		"id": "Copcar-Hardcore",
+		"model": "copcar.pie",
+		"name": "*Police Car*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhoversmall.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"Scavturbo": {
+				"left": "scavturbo.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhoversmall.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"Swatvan-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 5,
+		"buildPoints": 12,
+		"buildPower": 5,
+		"class": "Babas",
+		"hitpoints": 500,
+		"id": "Swatvan-Hardcore",
+		"model": "swatvan.pie",
+		"name": "*Swat van*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrack.pie"
+			},
+			"tracked01": {
+				"left": "scavtracks.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrack.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracks.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"Bigfoot-Hardcore": {
+		"armourHeat": 2,
+		"armourKinetic": 4,
+		"buildPoints": 20,
+		"buildPower": 10,
+		"class": "Babas",
+		"hitpoints": 900,
+		"id": "Bigfoot-Hardcore",
+		"model": "bigfoot.pie",
+		"name": "*Bigfoot*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 1000
+	},
+	"ScudLauncher-Hardcore": {
+		"armourHeat": 2,
+		"armourKinetic": 4,
+		"buildPoints": 20,
+		"buildPower": 20,
+		"class": "Babas",
+		"hitpoints": 1200,
+		"id": "ScudLauncher-Hardcore",
+		"model": "scudlauncherbody.pie",
+		"name": "*Scud Launcher*",
+		"powerOutput": 2200,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 1500
+	},
+	"QuadcannonTruck-Hardcore": {
+		"armourHeat": 3,
+		"armourKinetic": 6,
+		"buildPoints": 35,
+		"buildPower": 12,
+		"class": "Droids",
+		"hitpoints": 400,
+		"id": "QuadcannonTruck-Hardcore",
+		"model": "quadcannonbody.pie",
+		"name": "*quad cannon truck*",
+		"powerOutput": 2200,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrackhevy.pie"
+			},
+			"tracked01": {
+				"left": "scavtrackshevy.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrackhevy.pie"
+			},
+			"trackedscav": {
+				"left": "scavtrackshevy.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 900
+	},
+	"MiningTruck-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 50,
+		"buildPower": 25,
+		"class": "Droids",
+		"hitpoints": 4000,
+		"id": "MiningTruck-Hardcore",
+		"model": "minetruck.pie",
+		"name": "*Caterpiller*",
+		"powerOutput": 8000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "scavhalftrackminer.pie"
+			},
+			"tracked01": {
+				"left": "scavtracksminer.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrackminer.pie"
+			},
+			"trackedscav": {
+				"left": "scavtracksminer.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 2,
+		"weight": 2500
+	},
+	"Kirov-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 50,
+		"buildPower": 75,
+		"class": "Droids",
+		"hitpoints": 2500,
+		"id": "Kirov-Hardcore",
+		"model": "kirovreporting.pie",
+		"name": "*Zepelin*",
+		"powerOutput": 8000,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 3500
+	},
+	"Titan-Hardcore": {
+		"armourHeat": 5,
+		"armourKinetic": 9,
+		"buildPoints": 75,
+		"buildPower": 25,
+		"class": "Droids",
+		"hitpoints": 8000,
+		"id": "Titan-Hardcore",
+		"model": "scavtitanbody.pie",
+		"name": "*Titan*",
+		"powerOutput": 8000,
+		"size": "LIGHT",
+		"weaponSlots": 2,
+		"weight": 2000
+	},
+	"Body10MBT": {
+		"armourHeat": 25,
+		"armourKinetic": 28,
+		"buildPoints": 470,
+		"buildPower": 80,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 300,
+		"id": "Body10MBT",
+		"model": "drhbod10.pie",
+		"name": "Vengeance",
+		"powerOutput": 23000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prhlhtr3.pie",
+				"right": "prhrhtr3.pie"
+			},
+			"Helicopter": {
+				"left": "prhheli2.pie",
+				"still": "heavyheli_rotor_stationary.pie",
+				"moving": "fxheli10.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prhlvtl2.pie",
+				"right": "prhrvtl2.pie",
+				"moving": "fxvtl10.pie"
+			},
+			"hover01": {
+				"left": "prhhov1.pie"
+			},
+			"tracked01": {
+				"left": "prhltrk3.pie",
+				"right": "prhrtrk3.pie"
+			},
+			"wheeled01": {
+				"left": "prhlwhl1.pie",
+				"right": "prhrwhl1.pie"
+			}
+		},
+		"size": "HEAVY",
+		"weaponSlots": 1,
+		"weight": 2500
+	},
+	"Body11ABT": {
+		"armourHeat": 9,
+		"armourKinetic": 20,
+		"buildPoints": 350,
+		"buildPower": 60,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 200,
+		"id": "Body11ABT",
+		"model": "drhbod11.pie",
+		"name": "Python",
+		"powerOutput": 20000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prhlhtr3.pie",
+				"right": "prhrhtr3.pie"
+			},
+			"Helicopter": {
+				"left": "prhheli3.pie",
+				"still": "heavyheli_rotor_stationary.pie",
+				"moving": "fxheli11.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prhlvtl3.pie",
+				"right": "prhrvtl3.pie",
+				"moving": "fxvtl11.pie"
+			},
+			"hover01": {
+				"left": "prhhov1.pie"
+			},
+			"tracked01": {
+				"left": "prhltrk3.pie",
+				"right": "prhrtrk3.pie"
+			},
+			"wheeled01": {
+				"left": "prhlwhl1.pie",
+				"right": "prhrwhl1.pie"
+			}
+		},
+		"size": "HEAVY",
+		"weaponSlots": 1,
+		"weight": 2700
+	},
+	"Body12SUP": {
+		"armourHeat": 18,
+		"armourKinetic": 18,
+		"buildPoints": 350,
+		"buildPower": 52,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 180,
+		"id": "Body12SUP",
+		"model": "drhbod12.pie",
+		"name": "Mantis",
+		"powerOutput": 20000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prhlhtr3.pie",
+				"right": "prhrhtr3.pie"
+			},
+			"Helicopter": {
+				"left": "prhheli4.pie",
+				"still": "heavyheli_rotor_stationary.pie",
+				"moving": "fxheli12.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prhlvtl4.pie",
+				"right": "prhrvtl4.pie",
+				"moving": "fxvtl12.pie"
+			},
+			"hover01": {
+				"left": "prhhov1.pie"
+			},
+			"tracked01": {
+				"left": "prhltrk3.pie",
+				"right": "prhrtrk3.pie"
+			},
+			"wheeled01": {
+				"left": "prhlwhl1.pie",
+				"right": "prhrwhl1.pie"
+			}
+		},
+		"size": "HEAVY",
+		"weaponSlots": 1,
+		"weight": 2100
+	},
+	"Body13SUP": {
+		"armourHeat": 28,
+		"armourKinetic": 28,
+		"buildPoints": 470,
+		"buildPower": 86,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 350,
+		"id": "Body13SUP",
+		"model": "drmbod13.pie",
+		"name": "Wyvern",
+		"powerOutput": 25000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prhlhtr3.pie",
+				"right": "prhrhtr3.pie"
+			},
+			"Helicopter": {
+				"left": "prhheli1.pie",
+				"still": "heavyheli_rotor_stationary.pie",
+				"moving": "fxheli12.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prhlvtl1.pie",
+				"right": "prhrvtl1.pie",
+				"moving": "fxvtl12.pie"
+			},
+			"hover01": {
+				"left": "prhhov1.pie"
+			},
+			"tracked01": {
+				"left": "prhltrk3.pie",
+				"right": "prhrtrk3.pie"
+			},
+			"wheeled01": {
+				"left": "prhlwhl1.pie",
+				"right": "prhrwhl1.pie"
+			}
+		},
+		"size": "HEAVY",
+		"weaponSlots": 1,
+		"weight": 5000
+	},
+	"Body14SUP": {
+		"armourHeat": 30,
+		"armourKinetic": 30,
+		"buildPoints": 500,
+		"buildPower": 90,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 350,
+		"id": "Body14SUP",
+		"model": "drhbod14.pie",
+		"name": "Dragon",
+		"powerOutput": 30000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prslhtr4.pie",
+				"right": "prsrhtr4.pie"
+			},
+			"Helicopter": {
+				"left": "prsheli1.pie",
+				"still": "superheavyheli_rotor_stationary.pie",
+				"moving": "fxheli12.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prslvtl1.pie",
+				"right": "prsrvtl1.pie",
+				"moving": "fxvtl12.pie"
+			},
+			"hover01": {
+				"left": "prshov1.pie"
+			},
+			"tracked01": {
+				"left": "prsltrk4.pie",
+				"right": "prsrtrk4.pie"
+			},
+			"wheeled01": {
+				"left": "prslwhl1.pie",
+				"right": "prsrwhl1.pie"
+			}
+		},
+		"size": "HEAVY",
+		"weaponSlots": 2,
+		"weight": 6000
+	},
+	"Body1REC": {
+		"armourHeat": 4,
+		"armourKinetic": 10,
+		"buildPoints": 150,
+		"buildPower": 30,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 65,
+		"id": "Body1REC",
+		"model": "drlbod01.pie",
+		"name": "Viper",
+		"powerOutput": 5000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prllhtr1.pie",
+				"right": "prlrhtr1.pie"
+			},
+			"Helicopter": {
+				"left": "prlheli1.pie",
+				"still": "lightheli_rotor_stationary.pie",
+				"moving": "fxheli01.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prllvtl1.pie",
+				"right": "prlrvtl1.pie",
+				"moving": "fxvtl01.pie"
+			},
+			"hover01": {
+				"left": "prlhov1.pie"
+			},
+			"tracked01": {
+				"left": "prlltrk1.pie",
+				"right": "prlrtrk1.pie"
+			},
+			"wheeled01": {
+				"left": "prllwhl1.pie",
+				"right": "prlrwhl1.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 600
+	},
+	"Body2SUP": {
+		"armourHeat": 6,
+		"armourKinetic": 12,
+		"buildPoints": 220,
+		"buildPower": 41,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 107,
+		"id": "Body2SUP",
+		"model": "drlbod02.pie",
+		"name": "Leopard",
+		"powerOutput": 6500,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prllhtr1.pie",
+				"right": "prlrhtr1.pie"
+			},
+			"Helicopter": {
+				"left": "prlheli2.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "fxheli2and3.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prllvtl2.pie",
+				"right": "prlrvtl2.pie",
+				"moving": "fxvtl2and3.pie"
+			},
+			"hover01": {
+				"left": "prlhov1.pie"
+			},
+			"tracked01": {
+				"left": "prlltrk1.pie",
+				"right": "prlrtrk1.pie"
+			},
+			"wheeled01": {
+				"left": "prllwhl1.pie",
+				"right": "prlrwhl1.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 750
+	},
+	"Body3MBT": {
+		"armourHeat": 15,
+		"armourKinetic": 20,
+		"buildPoints": 170,
+		"buildPower": 43,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 100,
+		"id": "Body3MBT",
+		"model": "drlbod03.pie",
+		"name": "Retaliation",
+		"powerOutput": 5000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prllhtr1.pie",
+				"right": "prlrhtr1.pie"
+			},
+			"Helicopter": {
+				"left": "prlheli2.pie",
+				"still": "lightheli_rotor_stationary.pie",
+				"moving": "fxheli2and3.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prllvtl2.pie",
+				"right": "prlrvtl2.pie",
+				"moving": "fxvtl2and3.pie"
+			},
+			"hover01": {
+				"left": "prlhov1.pie"
+			},
+			"tracked01": {
+				"left": "prlltrk1.pie",
+				"right": "prlrtrk1.pie"
+			},
+			"wheeled01": {
+				"left": "prllwhl1.pie",
+				"right": "prlrwhl1.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 450
+	},
+	"Body4ABT": {
+		"armourHeat": 8,
+		"armourKinetic": 8,
+		"buildPoints": 100,
+		"buildPower": 25,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 55,
+		"id": "Body4ABT",
+		"model": "drlbod04.pie",
+		"name": "Bug",
+		"powerOutput": 5000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prllhtr1.pie",
+				"right": "prlrhtr1.pie"
+			},
+			"Helicopter": {
+				"left": "prlheli3.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "fxheli04.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prllvtl3.pie",
+				"right": "prlrvtl3.pie",
+				"moving": "fxvtl04.pie"
+			},
+			"hover01": {
+				"left": "prlhov1.pie"
+			},
+			"tracked01": {
+				"left": "prlltrk1.pie",
+				"right": "prlrtrk1.pie"
+			},
+			"wheeled01": {
+				"left": "prllwhl1.pie",
+				"right": "prlrwhl1.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 450
+	},
+	"Body5REC": {
+		"armourHeat": 6,
+		"armourKinetic": 15,
+		"buildPoints": 250,
+		"buildPower": 46,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 130,
+		"id": "Body5REC",
+		"model": "drmbod05.pie",
+		"name": "Cobra",
+		"powerOutput": 15000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prmlhtr2.pie",
+				"right": "prmrhtr2.pie"
+			},
+			"Helicopter": {
+				"left": "prmheli1.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "fxheli5to8.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prmlvtl1.pie",
+				"right": "prmrvtl1.pie",
+				"moving": "fxvtl5to8.pie"
+			},
+			"hover01": {
+				"left": "prmhov1.pie"
+			},
+			"tracked01": {
+				"left": "prmltrk2.pie",
+				"right": "prmrtrk2.pie"
+			},
+			"wheeled01": {
+				"left": "prmlwhl1.pie",
+				"right": "prmrwhl1.pie"
+			}
+		},
+		"size": "MEDIUM",
+		"weaponSlots": 1,
+		"weight": 2000
+	},
+	"Body6SUPP": {
+		"armourHeat": 9,
+		"armourKinetic": 18,
+		"buildPoints": 300,
+		"buildPower": 57,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 193,
+		"id": "Body6SUPP",
+		"model": "drmbod06.pie",
+		"name": "Panther",
+		"powerOutput": 18000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prmlhtr2.pie",
+				"right": "prmrhtr2.pie"
+			},
+			"Helicopter": {
+				"left": "prmheli1.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "fxheli5to8.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prmlvtl1.pie",
+				"right": "prmrvtl1.pie",
+				"moving": "fxvtl5to8.pie"
+			},
+			"hover01": {
+				"left": "prmhov1.pie"
+			},
+			"tracked01": {
+				"left": "prmltrk2.pie",
+				"right": "prmrtrk2.pie"
+			},
+			"wheeled01": {
+				"left": "prmlwhl1.pie",
+				"right": "prmrwhl1.pie"
+			}
+		},
+		"size": "MEDIUM",
+		"weaponSlots": 1,
+		"weight": 2500
+	},
+	"Body7ABT": {
+		"armourHeat": 20,
+		"armourKinetic": 24,
+		"buildPoints": 330,
+		"buildPower": 64,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 200,
+		"id": "Body7ABT",
+		"model": "drmbod07.pie",
+		"name": "Retribution",
+		"powerOutput": 15000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prmlhtr2.pie",
+				"right": "prmrhtr2.pie"
+			},
+			"Helicopter": {
+				"left": "prmheli1.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "fxheli5to8.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prmlvtl1.pie",
+				"right": "prmrvtl1.pie",
+				"moving": "fxvtl5to8.pie"
+			},
+			"hover01": {
+				"left": "prmhov1.pie"
+			},
+			"tracked01": {
+				"left": "prmltrk2.pie",
+				"right": "prmrtrk2.pie"
+			},
+			"wheeled01": {
+				"left": "prmlwhl1.pie",
+				"right": "prmrwhl1.pie"
+			}
+		},
+		"size": "MEDIUM",
+		"weaponSlots": 1,
+		"weight": 1500
+	},
+	"Body8MBT": {
+		"armourHeat": 12,
+		"armourKinetic": 12,
+		"buildPoints": 250,
+		"buildPower": 39,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 125,
+		"id": "Body8MBT",
+		"model": "drmbod08.pie",
+		"name": "Scorpion",
+		"powerOutput": 15000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prmlhtr2.pie",
+				"right": "prmrhtr2.pie"
+			},
+			"Helicopter": {
+				"left": "prmheli1.pie",
+				"still": "mediumheli_rotor_stationary.pie",
+				"moving": "fxheli5to8.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prmlvtl1.pie",
+				"right": "prmrvtl1.pie",
+				"moving": "fxvtl5to8.pie"
+			},
+			"hover01": {
+				"left": "prmhov1.pie"
+			},
+			"tracked01": {
+				"left": "prmltrk2.pie",
+				"right": "prmrtrk2.pie"
+			},
+			"wheeled01": {
+				"left": "prmlwhl1.pie",
+				"right": "prmrwhl1.pie"
+			}
+		},
+		"size": "MEDIUM",
+		"weaponSlots": 1,
+		"weight": 1500
+	},
+	"Body9REC": {
+		"armourHeat": 15,
+		"armourKinetic": 22,
+		"buildPoints": 420,
+		"buildPower": 71,
+		"class": "Droids",
+		"designable": 1,
+		"hitpoints": 284,
+		"id": "Body9REC",
+		"model": "drhbod09.pie",
+		"name": "Tiger",
+		"powerOutput": 18000,
+		"propulsionExtraModels": {
+			"HalfTrack": {
+				"left": "prhlhtr3.pie",
+				"right": "prhrhtr3.pie"
+			},
+			"Helicopter": {
+				"left": "prhheli1.pie",
+				"still": "heavyheli_rotor_stationary.pie",
+				"moving": "fxheli09.pie"
+			},
+			"Naval": {
+				"left": "prhnaval1.pie"
+			},
+			"V-Tol": {
+				"left": "prhlvtl1.pie",
+				"right": "prhrvtl1.pie",
+				"moving": "fxvtl09.pie"
+			},
+			"hover01": {
+				"left": "prhhov1.pie"
+			},
+			"tracked01": {
+				"left": "prhltrk3.pie",
+				"right": "prhrtrk3.pie"
+			},
+			"wheeled01": {
+				"left": "prhlwhl1.pie",
+				"right": "prhrwhl1.pie"
+			}
+		},
+		"size": "HEAVY",
+		"weaponSlots": 1,
+		"weight": 3300
+	},
+	"BusBody": {
+		"armourHeat": 1,
+		"armourKinetic": 4,
+		"buildPoints": 75,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 200,
+		"id": "BusBody",
+		"model": "exschool.pie",
+		"name": "*School Bus Body*",
+		"powerOutput": 4000,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrackhevy.pie"
+			},
+			"tracked01": {
+				"left": "scavtrackshevy.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrackhevy.pie"
+			},
+			"trackedscav": {
+				"left": "scavtrackshevy.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 2000
+	},
+	"CyborgHeavyBody": {
+		"armourHeat": 8,
+		"armourKinetic": 15,
+		"buildPoints": 205,
+		"buildPower": 50,
+		"class": "Cyborgs",
+		"droidType": "CYBORG_SUPER",
+		"hitpoints": 300,
+		"id": "CyborgHeavyBody",
+		"model": "scbd_std.pie",
+		"name": "Cyborg Heavy Body",
+		"powerOutput": 500,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 250
+	},
+	"CyborgLightBody": {
+		"armourHeat": 6,
+		"armourKinetic": 12,
+		"buildPoints": 95,
+		"buildPower": 25,
+		"class": "Cyborgs",
+		"droidType": "CYBORG",
+		"hitpoints": 200,
+		"id": "CyborgLightBody",
+		"model": "cybd_std.pie",
+		"name": "Cyborg Light Body",
+		"powerOutput": 500,
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 150
+	},
+	"FireBody": {
+		"armourHeat": 1,
+		"armourKinetic": 4,
+		"buildPoints": 75,
+		"buildPower": 4,
+		"class": "Babas",
+		"hitpoints": 200,
+		"id": "FireBody",
+		"model": "exfire.pie",
+		"name": "*Fire Engine Body*",
+		"powerOutput": 4000,
+		"propulsionExtraModels": {
+			"hover01": {
+				"left": "scavhover.pie"
+			},
+			"hoverscavs": {
+				"left": "scavhover.pie"
+			},
+			"HalfTrack": {
+				"left": "scavhalftrackhevy.pie"
+			},
+			"tracked01": {
+				"left": "scavtrackshevy.pie"
+			},
+			"halftrackscav": {
+				"left": "scavhalftrackhevy.pie"
+			},
+			"trackedscav": {
+				"left": "scavtrackshevy.pie"
+			}
+		},
+		"size": "LIGHT",
+		"weaponSlots": 1,
+		"weight": 3000
+	},
+	"SuperTransportBody": {
+		"armourHeat": 20,
+		"armourKinetic": 34,
+		"buildPoints": 625,
+		"buildPower": 500,
+		"class": "Transports",
+		"droidType": "SUPERTRANSPORTER",
+		"hitpoints": 500,
+		"id": "SuperTransportBody",
+		"model": "drtrans.pie",
+		"name": "Super Transport Body",
+		"powerOutput": 7525,
+		"size": "SUPER HEAVY",
+		"weaponSlots": 1,
+		"weight": 1850
+	},
+	"TransporterBody": {
+		"armourHeat": 9,
+		"armourKinetic": 20,
+		"buildPoints": 637,
+		"buildPower": 325,
+		"class": "Transports",
+		"droidType": "TRANSPORTER",
+		"hitpoints": 200,
+		"id": "TransporterBody",
+		"model": "drcytran.pie",
+		"name": "Transport Body",
+		"powerOutput": 2000,
+		"size": "MEDIUM",
+		"weaponSlots": 1,
+		"weight": 250
+	},
+	"ZNULLBODY": {
+		"id": "ZNULLBODY",
+		"model": "mibnkbod.pie",
+		"name": "*Z NULL BODY*",
+		"size": "LIGHT",
+		"weaponSlots": 1
+	}
+}
