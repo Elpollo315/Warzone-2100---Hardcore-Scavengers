@@ -8,6 +8,9 @@ function setupScavenger()	// inside hackNetOff()
 
 	const derrick = "A0ResourceExtractor";
 	const factory = "A0BaBaFactory";
+	const factory2 = "A0BaBaFactory2";
+	const factory3 = "A0BaBaFactory3";
+	const factory4 = "A0BaBaFactory4";
 	const vtolfac = "A0BaBaVtolFactory";
 	const gen = "A0BaBaPowerGenerator";
 	const repair = "ScavRepairCentre";
@@ -27,6 +30,16 @@ function setupScavenger()	// inside hackNetOff()
 		"A0BaBaRocketPitAT",
 		"A0BaBaMortarPit",
 		"bbaatow",
+		"X-Super-Missile-Scav",
+		"X-Super-Rocket-Scav",
+		"A0BaBaQuadcannonPitAT",
+		"A0BaBaQuadcannonPitAT",
+		"A0BaBaQuadcannonPitAT",
+		"A0BaBaPowerGenerator2",
+		"GuardTower1",
+		"GuardTower2",
+		"TankTrapC",
+		"A0BaBaKatyshaPitAT",
 	];
 
 	const templates = [
@@ -215,6 +228,7 @@ function setupScavenger()	// inside hackNetOff()
 		"Peacemaker-Hardcore",
 		"PeacemakerMG",
 		"Peacemaker-Hardcore",
+		"Peopleeater-Hardcore",
 		"Peopleeater2-Hardcore",
 		"Copcar-Hardcore",
 		"Swatvan-Hardcore",
@@ -246,6 +260,26 @@ function setupScavenger()	// inside hackNetOff()
 		"halftrackscav",
 		"trackedscav",
 		"Scavturbo",
+		"ScavDemolisher",
+		"PinkCar-Hardcore",
+		"BaBaPersonRocket",
+		"ScavNEXUStrack-Hardcore",
+		"X-Super-Missile-Scav",
+		"X-Super-Rocket-Scav",
+		"Scavrepair",
+		"B2crane1-Hardcore",
+		"B2crane2-Hardcore",
+		"Citybus-Hardcore",
+		"Katysha-Quad",
+		"ScavCamperBody2",
+		"Camper2-Hardcore",
+		"TechTruck-Hardcore",
+		"SpyTurret01",
+		"Laser2PULSEMk1",
+		"MortarEMP",
+		"LemanRuss-Hardcore",
+		"LemanCannon",
+		"LemanCannon2",
 	];
 
 	for (var i = 0, len = SCAV_COMPONENTS.length; i < len; ++i)
@@ -254,6 +288,9 @@ function setupScavenger()	// inside hackNetOff()
 	}
 
 	enableStructure(factory, scavengerPlayer);
+	enableStructure(factory2, scavengerPlayer);
+	enableStructure(factory3, scavengerPlayer);
+	enableStructure(factory4, scavengerPlayer);
 	enableStructure(vtolfac, scavengerPlayer);
 	enableStructure(derrick, scavengerPlayer);
 	enableStructure(gen, scavengerPlayer);

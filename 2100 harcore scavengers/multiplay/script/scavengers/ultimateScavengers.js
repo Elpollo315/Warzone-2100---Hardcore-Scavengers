@@ -1,10 +1,11 @@
+
 const MIN_ATTACKERS = 12;
-const MIN_NEXUS = 5;
+const MIN_NEXUS = 4;
 const MAX_DEFENDERS = 8;
 const MAX_GLOBAL_DEFENDERS = 25;
-const MAX_SENSORS = 4;
+const MAX_SENSORS = 5;
 const MAX_UNITS = 300;
-const MAX_HELICOPTERS = 40;
+const MAX_HELICOPTERS = 30;
 const MAX_CRANES = 10;
 
 const CRANE_BODY = "B2crane";
@@ -13,6 +14,9 @@ const CRANE_WEAP = "scavCrane";
 
 const derrick = "A0ResourceExtractor";
 const factoryBaba = "A0BaBaFactory";
+const factoryBaba2 = "A0BaBaFactory2";
+const factoryBaba3 = "A0BaBaFactory3";
+const factoryBaba4 = "A0BaBaFactory4";
 const vtolfac = "A0BaBaVtolFactory";
 const gen = "A0BaBaPowerGenerator";
 const oilres = "OilResource";
@@ -33,6 +37,33 @@ const defenses = [
 	"A0BaBaRocketPitAT",
 	"A0BaBaMortarPit",
 	"bbaatow",
+	"A0BaBaBunker",
+	"A0BaBaBunker",
+	"A0BaBaBunker",
+	"A0CannonTower",
+	"A0CannonTower",
+	"A0CannonTower",
+	"A0BaBaFlameTower",
+	"A0BaBaFlameTower",
+	"A0BaBaRocketPit",
+	"A0BaBaRocketPit",
+	"A0BaBaRocketPitAT",
+	"A0BaBaMortarPit",
+	"bbaatow",
+	"X-Super-Missile-Scav",
+	"X-Super-Rocket-Scav",
+	"A0BaBaQuadcannonPitAT",
+	"A0BaBaQuadcannonPitAT",
+	"A0BaBaQuadcannonPitAT",
+	"A0BaBaPowerGenerator2",
+	"A0BaBaPowerGenerator2",
+	"GuardTower1",
+	"GuardTower1",
+	"GuardTower2",
+	"GuardTower2",
+	"TankTrapC",
+	"A0BaBaKatyshaPitAT",
+	"A0BaBaKatyshaPitAT",
 ];
 
 const templates = [
@@ -92,6 +123,8 @@ const templates = [
 	["ScavCamperBody","RailGun1Mk1"],
 	["ScavTruckBody","BabaFlame","BabaRocket","BabaPitRocketAT"],
 	["ScavTruckBody","BusCannon","BabaPitRocket","BabaRocket"],
+	["ScavTruckBody","BusCannon","QuadCannon-Quad","QuadCannon-Quad"],
+	["ScavTruckBody","BusCannon","QuadCannon-Quad","QuadCannon-Quad"],
 	["WarRig-Hardcore","BabaFlame","BabaFlame"],
 	["WarRig-Hardcore","BabaFlame","BusCannon"],
 	["WarRig-Hardcore","BusCannon","BusCannon"],
@@ -113,6 +146,11 @@ const templates = [
 	["Truck-Hardcore","BabaHvyCannon"],
 	["Truck-Hardcore","RailGun1Mk1"],
 	["Truck-Hardcore","MG5TWINROTARY"],
+	["Citybus-Hardcore","BusCannon"],
+	["Citybus-Hardcore","BabaMedCannon"],
+	["Citybus-Hardcore","BabaHvyCannon"],
+	["Citybus-Hardcore","RailGun1Mk1"],
+	["Citybus-Hardcore","MG5TWINROTARY"],
 	["Tanker-Hardcore","ScudMissile-Incendiary"],
 	["BusBody","BabaMedCannon"],
 	["BusBody","MG4ROTARYMk1"],
@@ -154,10 +192,10 @@ const templates = [
 	["Peacemaker-Hardcore","PeacemakerMG"],
 	["Peopleeater-Hardcore","PeacemakerMG"],
 	["Peacemaker-Hardcore","PeacemakerMG"],
-	["Peopleeater-Hardcore","BusCannon"],
-	["Peopleeater-Hardcore","BabaMedCannon"],
-	["Peopleeater-Hardcore","BabaMedCannon"],
-	["Peopleeater-Hardcore","MG4ROTARYMk1"],
+	["Peopleeater-Hardcore","BusCannon","BabaPitRocket"],
+	["Peopleeater-Hardcore","BabaMedCannon","BabaPitRocket"],
+	["Peopleeater-Hardcore","BabaMedCannon","BabaPitRocket"],
+	["Peopleeater-Hardcore","MG4ROTARYMk1","BabaPitRocket"],
 	["Peopleeater2-Hardcore","BusCannon","BabaFlame","BabaFlame"],
 	["Peopleeater2-Hardcore","BabaMedCannon","BabaFlame","BabaFlame"],
 	["Peopleeater2-Hardcore","BusCannon","BusCannon","BusCannon"],
@@ -182,6 +220,11 @@ const templates = [
 	["QuadcannonTruck-Hardcore","QuadCannon-Quad"],
 	["QuadcannonTruck-Hardcore","QuadCannon-Quad"],
 	["QuadcannonTruck-Hardcore","QuadCannon-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
 	["MiningTruck-Hardcore","BabaHvyCannon","BabaRocket"],
 	["MiningTruck-Hardcore","BabaMedCannon","BabaRocket"],
 	["MiningTruck-Hardcore","BabaHvyCannon","QuadCannon-Quad"],
@@ -218,7 +261,95 @@ const templates = [
 	["ScorpionTank-Hardcore","BabaMedCannon"],
 	["Titan-Hardcore","TitanCannons","TitanLaser"],
 	["Titan-Hardcore","TitanCannons","TitanLaser"],
-	
+	["PinkCar-Hardcore","BJeepMG","BJeepMG"],
+	["PinkCar-Hardcore","BJeepMG","Mortar1Mk1"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BabaFlame","Mortar1Mk1"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BusCannon","Mortar1Mk1"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocketAT"],
+	["BusBody","ScavDemolisher"],
+	["ScavIcevanBody","ScavDemolisher"],
+	["Camper-Hardcore","ScavDemolisher"],
+	["Minitruck-Hardcore","ScavDemolisher"],
+	["Humvee-Hardcore","ScavDemolisher"],
+	["Humvee2-Hardcore","ScavDemolisher"],
+	["B4body-sml-trike01-Ultimate","BabaPitRocket"],
+	["B4body-sml-trike01-Ultimate","BabaRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaPitRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaPitRocketAT"],
+	["B2JeepBody-Ultimate","BabaPitRocket"],
+	["B2JeepBody-Ultimate","BabaRocket"],
+	["B2JeepBody-Ultimate","BabaPitRocketAT"],
+	["B2JeepBody-Ultimate","Mortar1Mk1"],
+	["ScavNEXUStrack-Hardcore","BabaMedCannon"],
+	["ScavNEXUStrack-Hardcore","BusCannon"],
+	["ScavNEXUStrack-Hardcore","BabaMedCannon"],
+	["ScavNEXUStrack-Hardcore","BusCannon"],
+	["ScavNEXUStrack-Hardcore","BabaFlame"],
+	["ScavNEXUStrack-Hardcore","BabaPitRocketAT"],
+	["ScavNEXUStrack-Hardcore","BabaPitRocketAT"],
+	["ScavNEXUStrack-Hardcore","Rocket-LtA-T"],
+	["ScavNEXUStrack-Hardcore","Rocket-LtA-T"],
+	["ScavNEXUStrack-Hardcore","ScavDemolisher"],
+	["ScavNEXUStrack-Hardcore","ScavDemolisher"],
+	["Peopleeater-Hardcore","BusCannon","QuadCannon-Quad"],
+	["Peopleeater-Hardcore","BabaMedCannon","QuadCannon-Quad"],
+	["Peopleeater-Hardcore","BabaMedCannon","QuadCannon-Quad"],
+	["Peopleeater-Hardcore","MG4ROTARYMk1","QuadCannon-Quad"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScorpionTank-Hardcore","Scavrepair"],
+	["ScorpionTank-Hardcore","Scavrepair"],
+	["B2crane1-Hardcore","BusCannon"],
+	["B2crane1-Hardcore","BabaPitRocket"],
+	["B2crane1-Hardcore","BabaPitRocketAT"],
+	["B2crane1-Hardcore","Scavrepair"],
+	["B2crane2-Hardcore","BabaRocket"],
+	["B2crane2-Hardcore","BabaRocket"],
+	["B2crane2-Hardcore","BusCannon"],
+	["B2crane2-Hardcore","BabaPitRocket"],
+	["B2crane2-Hardcore","QuadCannon-Quad"],
+	["B2crane2-Hardcore","Scavrepair"],
+	["B2crane1-Hardcore","MG3Mk1"],
+	["B2crane1-Hardcore","MG3Mk1"],
+	["B2crane3-Hardcore","MG3Mk1"],
+	["B2crane3-Hardcore","MG3Mk1"],
+	["B2crane3-Hardcore","BusCannon"],
+	["B2crane3-Hardcore","BusCannon"],
+	["B2crane3-Hardcore","BabaRocket"],
+	["B2crane3-Hardcore","BabaRocket"],
+	["ScavCamperBody2","BabaPitRocket"],
+	["ScavCamperBody2","BusCannon"],
+	["ScavCamperBody2","MG3Mk1"],
+	["ScavCamperBody2","RailGun1Mk1"],
+	["Camper2-Hardcore","BabaPitRocket"],
+	["Camper2-Hardcore","BusCannon"],
+	["Camper2-Hardcore","MG3Mk1"],
+	["Camper2-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","Laser2PULSEMk1"],
+	["TechTruck-Hardcore","MortarEMP"],
+	["TechTruck-Hardcore","SpyTurret01"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","Scavrepair"],
 ];
 
 const vtolTemplates = [
@@ -249,6 +380,7 @@ const bipTemplates = [
 	["ClasicCar-Hardcore", "MG1-VTOL-SCAVS"],
 	["Camper-Hardcore", "MG1-VTOL-SCAVS"],
 	["Camper-Hardcore", "MG1-VTOL-SCAVS"],
+	["WarRig-Hardcore", "MG1-VTOL-SCAVS"],
 ];
 
 const hovTemplates = [
@@ -294,6 +426,45 @@ const hovTemplates = [
 	["ClasicCoupe-Hardcore","MG1Mk1"],
 	["ClasicCoupe-Hardcore","MG2Mk1"],
 	["ClasicCoupe-Hardcore","MG3Mk1"],
+	["PinkCar-Hardcore","BJeepMG","BJeepMG"],
+	["PinkCar-Hardcore","BJeepMG","Mortar1Mk1"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BabaFlame","Mortar1Mk1"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BusCannon","Mortar1Mk1"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocketAT"],
+	["Camper-Hardcore","ScavDemolisher"],
+	["Minitruck-Hardcore","ScavDemolisher"],
+	["Humvee-Hardcore","ScavDemolisher"],
+	["Humvee2-Hardcore","ScavDemolisher"],
+	["B4body-sml-trike01-Ultimate","BabaPitRocket"],
+	["B4body-sml-trike01-Ultimate","BabaRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaPitRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaPitRocketAT"],
+	["B2JeepBody-Ultimate","BabaPitRocket"],
+	["B2JeepBody-Ultimate","BabaRocket"],
+	["B2JeepBody-Ultimate","BabaPitRocketAT"],
+	["B2JeepBody-Ultimate","Mortar1Mk1"],
+	["ScavCamperBody2","BabaPitRocket"],
+	["ScavCamperBody2","BusCannon"],
+	["ScavCamperBody2","MG3Mk1"],
+	["ScavCamperBody2","RailGun1Mk1"],
+	["Camper2-Hardcore","BabaPitRocket"],
+	["Camper2-Hardcore","BusCannon"],
+	["Camper2-Hardcore","MG3Mk1"],
+	["Camper2-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","Laser2PULSEMk1"],
+	["TechTruck-Hardcore","MortarEMP"],
+	["TechTruck-Hardcore","SpyTurret01"],
 ];
 
 const htrackTemplates = [
@@ -385,6 +556,134 @@ const htrackTemplates = [
 	["Humvee2-Hardcore","BabaPitRocketAT"],
 	["Humvee2-Hardcore","BabaRocket"],
 	["Humvee2-Hardcore","Mortar1Mk1"],
+	["WarRig-Hardcore","BabaFlame","BabaFlame"],
+	["WarRig-Hardcore","BabaFlame","BusCannon"],
+	["WarRig-Hardcore","BusCannon","BusCannon"],
+	["WarRig-Hardcore","BJeepMG","BJeepMG"],
+	["WarRig-Hardcore","MG3Mk1","MG3Mk1"],
+	["Doofwagon-Hardcore","Flame2","BabaFlame","BabaFlame"],
+	["Doofwagon-Hardcore","Flame2","BusCannon","BusCannon"],
+	["Doofwagon-Hardcore","BabaFlame","BabaFlame","BabaFlame"],
+	["Doofwagon-Hardcore","BabaFlame","BabaFlame","BabaFlame"],
+	["PinkCar-Hardcore","BJeepMG","BJeepMG"],
+	["PinkCar-Hardcore","BJeepMG","Mortar1Mk1"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BabaFlame","Mortar1Mk1"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BusCannon","Mortar1Mk1"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocketAT"],
+	["BusBody","ScavDemolisher"],
+	["ScavIcevanBody","ScavDemolisher"],
+	["Camper-Hardcore","ScavDemolisher"],
+	["Minitruck-Hardcore","ScavDemolisher"],
+	["Humvee-Hardcore","ScavDemolisher"],
+	["Humvee2-Hardcore","ScavDemolisher"],
+	["B4body-sml-trike01-Ultimate","BabaPitRocket"],
+	["B4body-sml-trike01-Ultimate","BabaRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaPitRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaPitRocketAT"],
+	["B2JeepBody-Ultimate","BabaPitRocket"],
+	["B2JeepBody-Ultimate","BabaRocket"],
+	["B2JeepBody-Ultimate","BabaPitRocketAT"],
+	["B2JeepBody-Ultimate","Mortar1Mk1"],
+	["ScavTruckBody","BabaFlame","BabaRocket","BabaPitRocketAT"],
+	["ScavTruckBody","BusCannon","BabaPitRocket","BabaRocket"],
+	["ScavTruckBody","BusCannon","QuadCannon-Quad","QuadCannon-Quad"],
+	["ScavTruckBody","BusCannon","QuadCannon-Quad","QuadCannon-Quad"],
+	["Tanker-Hardcore","BabaHvyCannon"],
+	["Tanker-Hardcore","BabaHvyCannon"],
+	["Tanker-Hardcore","BabaHvyCannon"],
+	["Tanker-Hardcore","MG5TWINROTARY"],
+	["Tanker-Hardcore","MG5TWINROTARY"],
+	["BusBody","Scavrepair"],
+	["BusBody","Scavrepair"],
+	["ScavNEXUStrack","ScavNEXUSlink"],
+	["ScavNEXUStrack","ScavNEXUSlink"],
+	["ScavNEXUStrack","ScavNEXUSlink"],
+	["ScavNEXUStrack-Hardcore","BabaMedCannon"],
+	["ScavNEXUStrack-Hardcore","BusCannon"],
+	["ScavNEXUStrack-Hardcore","BabaMedCannon"],
+	["ScavNEXUStrack-Hardcore","BusCannon"],
+	["ScavNEXUStrack-Hardcore","BabaFlame"],
+	["ScavNEXUStrack-Hardcore","BabaPitRocketAT"],
+	["ScavNEXUStrack-Hardcore","BabaPitRocketAT"],
+	["ScavNEXUStrack-Hardcore","Rocket-LtA-T"],
+	["ScavNEXUStrack-Hardcore","Rocket-LtA-T"],
+	["ScavNEXUStrack-Hardcore","ScavDemolisher"],
+	["ScavNEXUStrack-Hardcore","ScavDemolisher"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScorpionTank-Hardcore","Scavrepair"],
+	["ScorpionTank-Hardcore","Scavrepair"],
+	["ScorpionTank-Hardcore","BabaMedCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaMedCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaMedCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BusCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BusCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BusCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaFlame","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaFlame","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaFlame","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BusCannon"],
+	["ScorpionTank-Hardcore","BusCannon"],
+	["ScorpionTank-Hardcore","BabaMedCannon"],
+	["ScorpionTank-Hardcore","BabaMedCannon"],
+	["B2crane1-Hardcore","BusCannon"],
+	["B2crane1-Hardcore","BabaPitRocket"],
+	["B2crane1-Hardcore","BabaPitRocketAT"],
+	["B2crane1-Hardcore","Scavrepair"],
+	["B2crane2-Hardcore","BabaRocket"],
+	["B2crane2-Hardcore","BabaRocket"],
+	["B2crane2-Hardcore","BusCannon"],
+	["B2crane2-Hardcore","BabaPitRocket"],
+	["B2crane2-Hardcore","QuadCannon-Quad"],
+	["B2crane2-Hardcore","Scavrepair"],
+	["B2crane3-Hardcore","MG3Mk1"],
+	["B2crane3-Hardcore","MG3Mk1"],
+	["B2crane3-Hardcore","BusCannon"],
+	["B2crane3-Hardcore","BusCannon"],
+	["B2crane3-Hardcore","BabaRocket"],
+	["B2crane3-Hardcore","BabaRocket"],
+	["Citybus-Hardcore","BusCannon"],
+	["Citybus-Hardcore","BabaMedCannon"],
+	["Citybus-Hardcore","BabaHvyCannon"],
+	["Citybus-Hardcore","RailGun1Mk1"],
+	["Citybus-Hardcore","MG5TWINROTARY"],
+	["Citybus-Hardcore","Scavrepair"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["ScavCamperBody2","BabaPitRocket"],
+	["ScavCamperBody2","BusCannon"],
+	["ScavCamperBody2","MG3Mk1"],
+	["ScavCamperBody2","RailGun1Mk1"],
+	["Camper2-Hardcore","BabaPitRocket"],
+	["Camper2-Hardcore","BusCannon"],
+	["Camper2-Hardcore","MG3Mk1"],
+	["Camper2-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","Laser2PULSEMk1"],
+	["TechTruck-Hardcore","MortarEMP"],
+	["TechTruck-Hardcore","SpyTurret01"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","Scavrepair"],
 ];
 
 const trackTemplates = [
@@ -476,6 +775,137 @@ const trackTemplates = [
 	["Humvee2-Hardcore","BabaPitRocketAT"],
 	["Humvee2-Hardcore","BabaRocket"],
 	["Humvee2-Hardcore","Mortar1Mk1"],
+	["WarRig-Hardcore","BabaFlame","BabaFlame"],
+	["WarRig-Hardcore","BabaFlame","BusCannon"],
+	["WarRig-Hardcore","BusCannon","BusCannon"],
+	["WarRig-Hardcore","BJeepMG","BJeepMG"],
+	["WarRig-Hardcore","MG3Mk1","MG3Mk1"],
+	["Doofwagon-Hardcore","Flame2","BabaFlame","BabaFlame"],
+	["Doofwagon-Hardcore","Flame2","BusCannon","BusCannon"],
+	["Doofwagon-Hardcore","BabaFlame","BabaFlame","BabaFlame"],
+	["Doofwagon-Hardcore","BabaFlame","BabaFlame","BabaFlame"],
+	["PinkCar-Hardcore","BJeepMG","BJeepMG"],
+	["PinkCar-Hardcore","BJeepMG","Mortar1Mk1"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BabaFlame","Mortar1Mk1"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BusCannon","Mortar1Mk1"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocketAT"],
+	["BusBody","ScavDemolisher"],
+	["ScavIcevanBody","ScavDemolisher"],
+	["Camper-Hardcore","ScavDemolisher"],
+	["Minitruck-Hardcore","ScavDemolisher"],
+	["Humvee-Hardcore","ScavDemolisher"],
+	["Humvee2-Hardcore","ScavDemolisher"],
+	["BusBody","ScavDemolisher"],
+	["ScavIcevanBody","ScavDemolisher"],
+	["Camper-Hardcore","ScavDemolisher"],
+	["Minitruck-Hardcore","ScavDemolisher"],
+	["Humvee-Hardcore","ScavDemolisher"],
+	["Humvee2-Hardcore","ScavDemolisher"],
+	["B4body-sml-trike01-Ultimate","BabaPitRocket"],
+	["B4body-sml-trike01-Ultimate","BabaRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaPitRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaRocket"],
+	["B3body-sml-buggy01-Ultimate","BabaPitRocketAT"],
+	["B2JeepBody-Ultimate","BabaPitRocket"],
+	["B2JeepBody-Ultimate","BabaRocket"],
+	["B2JeepBody-Ultimate","BabaPitRocketAT"],
+	["B2JeepBody-Ultimate","Mortar1Mk1"],
+	["ScavTruckBody","BabaFlame","BabaRocket","BabaPitRocketAT"],
+	["ScavTruckBody","BusCannon","BabaPitRocket","BabaRocket"],
+	["ScavTruckBody","BusCannon","QuadCannon-Quad","QuadCannon-Quad"],
+	["ScavTruckBody","BusCannon","QuadCannon-Quad","QuadCannon-Quad"],
+	["Tanker-Hardcore","BabaHvyCannon"],
+	["Tanker-Hardcore","BabaHvyCannon"],
+	["Tanker-Hardcore","BabaHvyCannon"],
+	["Tanker-Hardcore","MG5TWINROTARY"],
+	["Tanker-Hardcore","MG5TWINROTARY"],
+	["ScavNEXUStrack","ScavNEXUSlink"],
+	["ScavNEXUStrack","ScavNEXUSlink"],
+	["ScavNEXUStrack","ScavNEXUSlink"],
+	["ScavNEXUStrack-Hardcore","BabaMedCannon"],
+	["ScavNEXUStrack-Hardcore","BusCannon"],
+	["ScavNEXUStrack-Hardcore","BabaMedCannon"],
+	["ScavNEXUStrack-Hardcore","BusCannon"],
+	["ScavNEXUStrack-Hardcore","BabaFlame"],
+	["ScavNEXUStrack-Hardcore","BabaPitRocketAT"],
+	["ScavNEXUStrack-Hardcore","BabaPitRocketAT"],
+	["ScavNEXUStrack-Hardcore","Rocket-LtA-T"],
+	["ScavNEXUStrack-Hardcore","Rocket-LtA-T"],
+	["ScavNEXUStrack-Hardcore","ScavDemolisher"],
+	["ScavNEXUStrack-Hardcore","ScavDemolisher"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScavNEXUStrack-Hardcore","Scavrepair"],
+	["ScorpionTank-Hardcore","Scavrepair"],
+	["ScorpionTank-Hardcore","Scavrepair"],
+	["ScorpionTank-Hardcore","BabaMedCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaMedCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaMedCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BusCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BusCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BusCannon","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaFlame","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaFlame","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BabaFlame","Rocket-LtA-T"],
+	["ScorpionTank-Hardcore","BusCannon"],
+	["ScorpionTank-Hardcore","BusCannon"],
+	["ScorpionTank-Hardcore","BabaMedCannon"],
+	["ScorpionTank-Hardcore","BabaMedCannon"],
+	["B2crane1-Hardcore","BusCannon"],
+	["B2crane1-Hardcore","BabaPitRocket"],
+	["B2crane1-Hardcore","BabaPitRocketAT"],
+	["B2crane1-Hardcore","Scavrepair"],
+	["B2crane2-Hardcore","BabaRocket"],
+	["B2crane2-Hardcore","BabaRocket"],
+	["B2crane2-Hardcore","BusCannon"],
+	["B2crane2-Hardcore","BabaPitRocket"],
+	["B2crane2-Hardcore","QuadCannon-Quad"],
+	["B2crane2-Hardcore","Scavrepair"],
+	["B2crane3-Hardcore","MG3Mk1"],
+	["B2crane3-Hardcore","MG3Mk1"],
+	["B2crane3-Hardcore","BusCannon"],
+	["B2crane3-Hardcore","BusCannon"],
+	["B2crane3-Hardcore","BabaRocket"],
+	["B2crane3-Hardcore","BabaRocket"],
+	["Citybus-Hardcore","BusCannon"],
+	["Citybus-Hardcore","BabaMedCannon"],
+	["Citybus-Hardcore","BabaHvyCannon"],
+	["Citybus-Hardcore","RailGun1Mk1"],
+	["Citybus-Hardcore","MG5TWINROTARY"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["QuadcannonTruck-Hardcore","Katysha-Quad"],
+	["ScavCamperBody2","BabaPitRocket"],
+	["ScavCamperBody2","BusCannon"],
+	["ScavCamperBody2","MG3Mk1"],
+	["ScavCamperBody2","RailGun1Mk1"],
+	["Camper2-Hardcore","BabaPitRocket"],
+	["Camper2-Hardcore","BusCannon"],
+	["Camper2-Hardcore","MG3Mk1"],
+	["Camper2-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","RailGun1Mk1"],
+	["TechTruck-Hardcore","Laser2PULSEMk1"],
+	["TechTruck-Hardcore","MortarEMP"],
+	["TechTruck-Hardcore","SpyTurret01"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","LemanCannon2"],
+	["LemanRuss-Hardcore","Scavrepair"],
 ];
 
 const turboTemplates = [
@@ -509,6 +939,19 @@ const turboTemplates = [
 	["ClasicCoupe-Hardcore","MG1Mk1"],
 	["ClasicCoupe-Hardcore","MG2Mk1"],
 	["ClasicCoupe-Hardcore","MG3Mk1"],
+	["PinkCar-Hardcore","BJeepMG","BJeepMG"],
+	["PinkCar-Hardcore","BJeepMG","Mortar1Mk1"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaRocket"],
+	["PinkCar-Hardcore","BJeepMG","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BabaFlame","Mortar1Mk1"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaRocket"],
+	["PinkCar-Hardcore","BabaFlame","BabaPitRocketAT"],
+	["PinkCar-Hardcore","BusCannon","Mortar1Mk1"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaRocket"],
+	["PinkCar-Hardcore","BusCannon","BabaPitRocketAT"],
 ];
 const infTemplates = [
 	["B1BaBaPerson01", "BaBaMG"],
@@ -516,6 +959,8 @@ const infTemplates = [
 	["B1BaBaPerson01", "BaBaMG"],
 	["B1BaBaPerson01", "BaBaPersonShotgun"],
 	["B1BaBaPerson01", "BaBaPersonShotgun"],
+	["B1BaBaPerson01", "BaBaPersonRocket"],
+	["B1BaBaPerson01", "BaBaPersonRocket"],
 	["B1BaBaPerson01", "BaBaPersonHijack"],
 ];
 
@@ -788,7 +1233,7 @@ function buildThingsWithDroid(droid)
 {
 	const MAX_FACTORY_COUNT = 100;
 
-	switch (random(8))
+	switch (random(12))
 	{
 		case 0:
 			if ((countStruct(factoryBaba) < MAX_FACTORY_COUNT) && (((5 * countStruct(factoryBaba)) < countStruct(derrick)) || (playerPower(me) > 500)))
@@ -825,6 +1270,24 @@ function buildThingsWithDroid(droid)
 			if (countHelicopters() > 2 * countStruct(vtolpad))
 			{
 				buildStructure(droid, vtolpad);
+			}
+		break;
+		case 6:
+			if ((countStruct(factoryBaba2) < MAX_FACTORY_COUNT) && (((5 * countStruct(factoryBaba2)) < countStruct(derrick)) || (playerPower(me) > 500)))
+			{
+				buildStructure(droid, factoryBaba2);
+			}
+		break;
+		case 7:
+			if ((countStruct(factoryBaba3) < MAX_FACTORY_COUNT) && (((5 * countStruct(factoryBaba3)) < countStruct(derrick)) || (playerPower(me) > 500)))
+			{
+				buildStructure(droid, factoryBaba3);
+			}
+		break;
+		case 8:
+			if ((countStruct(factoryBaba4) < MAX_FACTORY_COUNT) && (((5 * countStruct(factoryBaba4)) < countStruct(derrick)) || (playerPower(me) > 500)))
+			{
+				buildStructure(droid, factoryBaba4);
 			}
 		break;
 		default:
@@ -1036,6 +1499,84 @@ function produceThings()
 	}
 
 	var list = enumStruct(me, factoryBaba).concat(enumStruct(me, vtolfac));
+	for (var i = 0, len = list.length; i < len; ++i)
+	{
+		var fac = list[i];
+
+		if (structureIdle(fac) && fac.status === BUILT)
+		{
+			if (fac.stattype === FACTORY)
+			{
+				produceDroid(fac);
+			}
+			else if (fac.stattype === VTOL_FACTORY)
+			{
+				produceHelicopter(fac);
+			}
+		}
+	}
+}
+
+function produceThings2()
+{
+	if (atLimits())
+	{
+		return;
+	}
+
+	var list = enumStruct(me, factoryBaba2).concat(enumStruct(me, vtolfac));
+	for (var i = 0, len = list.length; i < len; ++i)
+	{
+		var fac = list[i];
+
+		if (structureIdle(fac) && fac.status === BUILT)
+		{
+			if (fac.stattype === FACTORY)
+			{
+				produceDroid(fac);
+			}
+			else if (fac.stattype === VTOL_FACTORY)
+			{
+				produceHelicopter(fac);
+			}
+		}
+	}
+}
+
+function produceThings3()
+{
+	if (atLimits())
+	{
+		return;
+	}
+
+	var list = enumStruct(me, factoryBaba3).concat(enumStruct(me, vtolfac));
+	for (var i = 0, len = list.length; i < len; ++i)
+	{
+		var fac = list[i];
+
+		if (structureIdle(fac) && fac.status === BUILT)
+		{
+			if (fac.stattype === FACTORY)
+			{
+				produceDroid(fac);
+			}
+			else if (fac.stattype === VTOL_FACTORY)
+			{
+				produceHelicopter(fac);
+			}
+		}
+	}
+}
+
+function produceThings4()
+{
+	if (atLimits())
+	{
+		return;
+	}
+
+	var list = enumStruct(me, factoryBaba4).concat(enumStruct(me, vtolfac));
 	for (var i = 0, len = list.length; i < len; ++i)
 	{
 		var fac = list[i];
@@ -1288,7 +1829,7 @@ function eventObjectTransfer(object, from)
 
 function retreat(obj)
 {
-	const REPAIR_PERCENT = 85;
+	const REPAIR_PERCENT = 50;
 
 	if (obj.type === DROID && obj.order !== DORDER_RTR)
 	{
@@ -1352,9 +1893,12 @@ function eventStartLevel()
 	needToPickGroup = newGroup();
 
 	produceThings();
-	setTimer("produceThings", 40);
-	setTimer("buildThings", 800);
-	setTimer("groundAttackStuff", 1000);
+	setTimer("produceThings", 100);
+	setTimer("produceThings2", 75);
+	setTimer("produceThings3", 60);
+	setTimer("produceThings4", 50);
+	setTimer("buildThings", 900);
+	setTimer("groundAttackStuff", 1200);
 	setTimer("helicopterAttack", 2900);
 	setTimer("cleanupBaseInfo", 8000);
 }

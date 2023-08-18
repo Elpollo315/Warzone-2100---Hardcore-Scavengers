@@ -55,9 +55,9 @@
 		"weight": 400
 	},
 	"halftrackscav": {
-		"buildPoints": 25,
-		"buildPower": 25,
-		"designable": 1,
+		"buildPoints": 20,
+		"buildPower": 5,
+		"designable": 0,
 		"hitpointPctOfBody": 200,
 		"id": "HalfTrack",
 		"model": "PRLRHTR1.PIE",
@@ -148,7 +148,7 @@
 	},
 	"hoverscavs": {
 		"buildPoints": 15,
-		"buildPower": 15,
+		"buildPower": 8,
 		"designable": 0,
 		"hitpointPctOfBody": 100,
 		"id": "hover01",
@@ -173,9 +173,9 @@
 		"weight": 650
 	},
 	"trackedscav": {
-		"buildPoints": 50,
-		"buildPower": 50,
-		"designable": 1,
+		"buildPoints": 25,
+		"buildPower": 10,
+		"designable": 0,
 		"hitpointPctOfBody": 300,
 		"id": "tracked01",
 		"model": "PRLRTRK1.PIE",
